@@ -1,0 +1,1312 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root
+
+{
+    --primary:#0d6efd;
+    --dark:#21252f;
+    --body:#888;
+    --box-shadow:#0 8px 22px rgba(0,0,0,0.1);
+}
+
+body
+{
+ font-family: poppins ,"san-serif";   
+ /* lone: height 1.7; */ 
+  height: 1.7;
+ color: var(--danger); 
+ /* background-image: url('images/stadium-189777_1920.jpg'); */
+ /* background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+ margin: 0; */
+ padding: 0; 
+}
+
+
+
+.my-bg
+{
+ font-family: sora ,"san-serif";   
+ /* lone: height 1.7; */ 
+  height: 1.7;
+ color: var(--danger); 
+ background-image: url('images/chees1.jpg');
+ background-color: #000;
+ /* /* background-repeat: no-repeat; */
+ background-size: cover;
+ background-position: center;
+ margin: 0; 
+ /* background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+ margin: 0; */
+ padding: 0; 
+}
+h1,h2,h3,h4,h5,h6,
+.display-4
+{
+    color: var(--dark);
+    font-weight: 700;
+
+}
+
+
+a{
+    color: var(--dark);
+    text-decoration: none;
+    
+}
+/* .a::after{
+  content: "";
+  position: absolute;
+  background-color: #ff3c78;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  width: 0;
+  height: 3px;
+  background-color: var(--danger);
+} */
+.a:hover {
+  width: 100%;
+}
+.logo {
+    font-family: 'Orbitron', 'Noto Sans', sans-serif;
+    font-size: 1.8rem;
+    color: #fafafa;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.logo span {
+
+    font-size: 1.8rem;
+    font-weight: bold;
+    
+    color: #f81b1b;
+}
+   
+.navbar {
+    box-shadow: var(--box-shadow);
+    background-color:transparent ;
+    color: transparent;
+    
+
+    
+}
+
+.nav-link {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    position: relative;
+    
+    
+    
+    
+}
+.nav-link:hover, .nav-link.active {
+    color: #da1010;
+}
+.nav-link ::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #f81b1b;
+    transform: translateX(-50%);
+    visibility: hidden;
+    transition:  0.3s ease-in-out;
+}
+.nav-link:hover::before, .nav-link.active:hover::before {
+    width: 100%;
+    visibility:visible;
+}
+.btn {
+    padding: 14px 18px;
+    border-width: 2px;
+    border-radius: 0;
+    
+}
+.btn :hover{
+ background-color: #000;
+  
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.activity-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  border: 30px;
+}
+
+.activity-card:hover {
+  transform: translateY(-10px);
+}
+
+.activity-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  
+}
+
+.activity-card h3 {
+  font-size: 1.5em;
+  margin: 15px;
+  color: #000000;
+}
+
+.activity-card p {
+  font-size: 1em;
+  margin: 0 15px 20px;
+  color: #555;
+}
+
+.btn-learn-more {
+  display: block;
+  margin: 15px;
+  padding: 10px;
+  background-color: #000;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-learn-more:hover {
+  background-color: #db0202;
+}
+.container-1 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+
+
+/* From Uiverse.io by mobinkakei */ 
+.cta {
+    display: flex;
+    padding: 11px 33px;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    color: white;
+    background: red;
+    transition: 1s;
+    box-shadow: 6px 6px 0 black;
+    transform: skewX(-15deg);
+    border: none;
+    cursor: pointer;
+  }
+  
+  .cta:focus {
+    outline: none;
+  }
+  
+  .cta:hover {
+    transition: 0.5s;
+    box-shadow: 10px 10px 0 #fff;
+  }
+  
+  .cta .second {
+    transition: 0.5s;
+    margin-right: 0px;
+  }
+  
+  .cta:hover .second {
+    transition: 0.5s;
+    margin-right: 45px;
+  }
+  
+  .span {
+    transform: skewX(15deg);
+  }
+  
+  .second {
+    width: 20px;
+    margin-left: 30px;
+    position: relative;
+    top: 12%;
+  }
+  
+  .one {
+    transition: 0.4s;
+    transform: translateX(-60%);
+  }
+  
+  .two {
+    transition: 0.5s;
+    transform: translateX(-30%);
+  }
+  
+  .cta:hover .three {
+    animation: color_anim 1s infinite 0.2s;
+  }
+  
+  .cta:hover .one {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.6s;
+  }
+  
+  .cta:hover .two {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.4s;
+  }
+  
+  @keyframes color_anim {
+    0% {
+      fill: white;
+    }
+  
+    50% {
+      fill: #000000;
+    }
+  
+    100% {
+      fill: white;
+    }
+  }
+  
+.hero {
+    
+    background-image: url(../css/images/138077.jpg);
+    
+    background-position : center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 2;
+    
+
+}
+
+.hero::after
+{
+    content:"" ;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(21,20,51,0.5);
+    z-index: -1;
+
+} 
+
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+}
+
+.card-effect {
+    box-shadow: var(--box-shadow);
+    background-color: #000;
+    padding: 25px;
+    transition: all 0.35s ease;
+    border-radius: 30px;
+}
+
+.card-effect img{
+    
+border-radius: 20px;
+
+}
+
+.card-effect:hover {
+   box-shadow: none;
+   transform: translateY(5px);
+
+}
+.iconbox 
+{
+    width: 54px;
+    height: 54px;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:var(--primary);
+
+    color: #fff;
+    font-size: 32px;
+    border-radius: 100px;
+
+}
+.service {
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    /* background-image: url(../images/pexels-tyler-hendy-9620-54123.jpg); */
+}
+.service::after {
+    content: '';
+    width:100% ;
+    height: 100%;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    background-color: var(--primary);
+    z-index: -1;
+    opacity: 0;
+    transition:all 0.4s ease;
+}
+
+.service:hover .iconbox {
+    background-color: #fff;
+    color: var(--primary);
+
+
+}
+.service:hover h5,
+.service:hover p {
+    color: #fff;
+}
+.service:hover::after {
+    opacity: 1;
+    top: 0;
+}
+
+
+.col-img{
+    
+    background-image: url(../css/images/cov.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+    
+
+}
+.col-img-2 
+{
+   background-image: url(../css/images/football-5180297_1920.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+}
+.col-img-3 
+{
+   background-image: url(../css/images/cricket-7874028_1920.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+}
+
+.col-img-4 
+{
+   background-image: url(../css/images/pexels-roman-odintsov-8084790.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+}
+.col-img-5 
+{
+   background-image: url(../css/images/pexels-tima-miroshnichenko-6598743.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+}
+.col-img-6
+{
+   background-image: url(../css/images/TABL.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+}
+.col-img-7
+{
+   background-image: url(../css/images/pexels-maria-varshavskaya-3289186-4931356.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+}
+.col-img-8
+{
+   background-image: url(../css/images/pexels-thirdman-7657046.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+}
+.col-img-9
+{
+   background-image: url(../css/images/pexels-andiravsanjani-3678429.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+}
+.col-img-10
+{
+   background-image: url(../css/images/swim.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+}
+.col-img-11
+{
+   background-image: url(../css/images/hunter4\(5\).jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+}
+.col-img-12
+{
+   background-image: url(../css/images/futsal23.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+}
+.col-img-13
+{
+   background-image: url(../css/images/volleyball22.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+}
+.col-img-14
+{
+   background-image: url(../css/images/fetness1.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+}
+.col-img-15
+{
+   background-image: url(../css/images/hockey1.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+}
+.col-img-16
+{
+   background-image: url(../css/images/baseball\ \(3\).jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+}
+.col-img-17
+{
+   background-image: url(../css/images/runing\ \(4\).jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+}
+.col-img-18
+{
+   background-image: url(../css/images/throgth1\ \(3\)3.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+}
+.col-img-19
+{
+   background-image: url(../css/images/hourse\ \(3\).jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+}
+.project{
+    position: relative;
+    overflow: hidden;
+    
+   }
+.project .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(21,20,51,0.8);
+    padding: 30px;
+    display: flex;
+    align-items: flex-end;
+    transition: all 0.5s ease;
+    opacity: 0;
+}
+
+.project img{
+    transition: all 0.5s ease;
+}
+.project:hover .overlay{
+    opacity: 1;
+
+}
+.project:hover img{
+    transform: scale(1.1);
+    
+}
+
+
+
+.project{
+    position: relative;
+    overflow: hidden;
+    
+   }
+.project .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(21,20,51,0.8);
+    padding: 30px;
+    display: flex;
+    align-items: flex-end;
+    transition: all 0.5s ease;
+    opacity: 0;
+}
+
+.project img{
+    transition: all 0.5s ease;
+}
+.project:hover .overlay{
+    opacity: 1;
+
+}
+.project:hover img{
+    transform: scale(1.1);
+
+    
+}
+
+.pricing i{
+    font-size: 20px;
+    color: var(--success);
+
+    
+}
+.pricing ul li {
+    margin-top: 8px;
+    
+}
+
+.project .overlay{
+
+    position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(21, 20, 51, 0.8);
+padding: 30px;
+display: flex;
+align-items: flex-end;
+transition: all 0.5s ease;
+opacity: 0;
+}
+
+
+
+.social-icon{
+    display: flex;
+    justify-content: center;
+}
+.social-icon a{
+    width: 34px;
+    height: 34px;
+    background-color: var(--success);
+    border-radius: 2px solid var(--success);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    margin-left: 5px;
+    transition: all 0.4s ease;
+    border: 2px solid var(--success);
+
+}
+.social-icon a:hover{
+    color: var(--success);
+    background-color: transparent;
+    border-color: var(--success);
+}
+form input.form-control{
+    height: 56px;
+}
+form .form-control{
+    border:transparent; 
+    border-radius: 0;
+    font-size: 1rem;
+    
+    font-weight: bold;
+    background-color: rgba(252, 244, 244, 0.02);
+}
+ 
+/* From Uiverse.io by Smit-Prajapati */ 
+.orange {
+  color: #ff7a01;
+  
+}
+
+.form-container {
+  max-width: 700px;
+  margin: 30px;
+  background-color: #001;
+  padding: 30px;
+  border-left: 5px solid #ff7a01;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%);
+}
+
+
+.heading {
+  display: block;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.form-container .form .input {
+  color: #87a4b6;
+  width: 100%;
+  background-color: #002733;
+  border: none;
+  outline: none;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+  border-left: 1px solid transparent;
+  
+}
+
+.form-container .form .input:focus {
+  border-left: 5px solid #ee082a;
+}
+
+.form-container .form .textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-color: #013747;
+  color:  #ee082a;
+  font-weight: bold;
+  resize: none;
+  max-height: 150px;
+  margin-bottom: 20px;
+  border-left: 1px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.form-container .form .textarea:focus {
+  border-left: 5px solid #ee082a;
+}
+
+.form-container .form .button-container {
+  display: flex;
+  gap: 10px;
+}
+
+.form-container .form .button-container .send-button {
+  flex-basis: 70%;
+  background:  #ee082a;
+  padding: 10px;
+  color: #001925;
+  text-align: center;
+  font-weight: bold;
+  border: 1px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.form-container .form .button-container .send-button:hover {
+  background: transparent;
+  border: 1px solid  #ee082a;
+  color: #ee082a;
+}
+
+.form-container .form .button-container .reset-button-container {
+  filter: drop-shadow(1px 1px 0px #e60026);
+  flex-basis: 30%;
+}
+
+.form-container .form .button-container .reset-button-container .reset-button {
+  position: relative;
+  text-align: center;
+  padding: 10px;
+  color: #ee082a;
+  font-weight: bold;
+  background: #001925;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);
+  transition: all 0.2s ease-in-out;
+}
+
+.form-container .form .button-container .reset-button-container .reset-button:hover {
+  background: #ee082a;
+  color: #001925;
+}
+.col-img{
+    
+    background-image: url(../css/images/cov.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+
+}
+.col-img1{
+    
+  background-image: url(../css/images/sven-kucinic-Z0KjmjxUsKs-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 500px;
+
+}
+/* .col-img-h {
+  background-image: url(../css/images/favpng_sport-football-player-athlete-womens-association-football.png);
+} */
+
+
+
+/* 
+.footer-top{
+    padding-bottom: 90px;
+    padding: 90px;
+    background-color: var(--dark);
+}
+.footer-top a{
+    color: var(--body);
+}
+.footer-top a:hover{
+    color:#fff;
+}
+.footer-bottom{
+    background-color: #242933;
+} */
+ 
+.footer-top{
+  padding-bottom: 90px;
+  padding: 90px;
+  background-color: var(--dark);
+}
+.footer-top a{
+  color: var(--body);
+}
+.footer-top a:hover{
+  color:#fff;
+}
+.footer-bottom{
+  background-color: #242933;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+
+/* From Uiverse.io by Yaya12085 */ 
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 450px;
+    /* background-color:var(--dark); */
+    background: rgba(255, 255, 255, 0.15);
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    
+  }
+  
+  .title {
+    font-size: 28px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+  }
+  
+  .title::before,.title::after {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    left: 0px;
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .title::before {
+    width: 18px;
+    height: 18px;
+    background-color: royalblue;
+  }
+  
+  .title::after {
+    width: 18px;
+    height: 18px;
+    animation: pulse 1s linear infinite;
+  }
+  
+  .message, .signin {
+    color: rgba(88, 87, 87, 0.822);
+    font-size: 14px;
+  }
+  
+  .signin {
+    text-align: center;
+  }
+  
+  .signin a {
+    color: royalblue;
+  }
+  
+  .signin a:hover {
+    text-decoration: underline royalblue;
+  }
+  
+  .flex {
+    display: flex;
+    width: 100%;
+    gap: 6px;
+  }
+  
+  .form label {
+    position: relative;
+  }
+  
+  .form label .input {
+    width: 100%;
+    padding: 10px 10px 20px 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+  }
+  
+  .form label .input + span {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    color: grey;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+  }
+  
+  .form label .input:placeholder-shown + span {
+    top: 15px;
+    font-size: 0.9em;
+  }
+  
+  .form label .input:focus + span,.form label .input:valid + span {
+    top: 30px;
+    font-size: 0.7em;
+    font-weight: 600;
+  }
+  
+  .form label .input:valid + span {
+    color: green;
+  }
+  
+  .submit {
+    border: none;
+    outline: none;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    transform: .3s ease;
+  }
+  
+  .submit:hover {
+    background-color: rgb(214, 47, 47);
+  }
+  
+  @keyframes pulse {
+    from {
+      transform: scale(0.9);
+      opacity: 1;
+    }
+  
+    to {
+      transform: scale(1.8);
+      opacity: 0;
+    }
+  }
+
+
+/* aa  */
+
+
+ .card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 350px;
+    height: 300px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+    transition: 0.5s;
+}
+
+ .card:hover {
+    height: 400px;
+}
+
+ .card .imgBx {
+    position: absolute;
+    top: 20px;
+    width: 300px;
+    height: 220px;
+    background: #333;
+    border-radius: 12px;
+    transition: 0.5s;
+}
+ .card:hover .imgBx {
+    top: -100px;
+    transform: scale(0.75);
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+}
+
+.card .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+ .card .content {
+    position: absolute;
+    top: 252px;
+    width: 100%;
+    padding: 0 30px;
+    height: 35px;
+    overflow: hidden;
+    text-align: center;
+    transition: 0.5s;
+}
+
+ .card:hover .content {
+    top: 130px;
+    height: 250px;
+}
+
+ .card .content h2 {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: var(--clr);
+}
+.card .content p {
+    color: #333;
+}
+.card .content a {
+    position: relative;
+    top: 15px;
+    display: inline-block;
+    padding: 12px 25px;
+    background: var(--clr);
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none; /* Added a value for text-decoration */
+    border-radius: 8px;
+}
+
+.wrapper {
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255,.5);
+    border-radius: 20px;
+    backdrop-filter:blur (20px) ;
+    box-shadow: 0 0 30px rgba(0, 0,0,.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* overflow: hidden; */
+}
+
+.wrapper .icon-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background: #162938;
+    font-size: 2em;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    z-index: 1 ;
+}
+.wrapper .form-box {
+    width: 100%;
+    padding: 40px;
+}
+ .form-box .login{
+    display: none;
+}
+
+
+/* .btn {
+    width: 100%;
+    height: 45px;
+    background-color: #162938;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+
+ } */
+ .login-register{
+    font-size: .9em;
+    color: #162938;
+    font-weight: 500;
+    margin-top: 25px 0 10px;
+
+ }
+ .login-register p a {
+    color: #162938;
+    text-decoration: none;
+    font-weight: 600;
+ }
+ .login-register p a:hover {
+    text-decoration: underline;
+ }
+
+ /* From Uiverse.io by doniaskima */ 
+.btn-17,
+.btn-17 *,
+.btn-17 :after,
+.btn-17 :before,
+.btn-17:after,
+.btn-17:before {
+  border: 0 solid;
+  box-sizing: border-box;
+  
+}
+
+.btn-17 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image : -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.btn-17:disabled {
+  cursor: default;
+}
+
+.btn-17:-moz-focusring {
+  outline: auto;
+}
+
+.btn-17 svg {
+  display: block;
+  vertical-align: middle;
+}
+
+.btn-17 [hidden] {
+  display: none;
+}
+
+.btn-17 {
+  border-radius: 99rem;
+  border-width: 2px;
+  padding: 0.8rem 3rem;
+  z-index: 0;
+}
+
+.btn-17,
+.btn-17 .text-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.btn-17 .text-container {
+  display: block;
+  mix-blend-mode: difference;
+}
+
+.btn-17 .text {
+  display: block;
+  position: relative;
+  
+}
+
+.btn-17:hover .text {
+  -webkit-animation: move-up-alternate 0.3s forwards;
+  animation: move-up-alternate 0.3s forwards;
+  
+}
+
+@-webkit-keyframes move-up-alternate {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(80%);
+  }
+
+  51% {
+    transform: translateY(-80%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes move-up-alternate {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(80%);
+  }
+
+  51% {
+    transform: translateY(-80%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+.btn-17:after,
+.btn-17:before {
+  --skew: 0.2;
+  /* background: #fff; */
+  /* background-color: #dc3545 !important; */
+  background-color: #fff;
+  content: "";
+  display: block;
+  height: 102%;
+  left: calc(-50% - 50% * var(--skew));
+  pointer-events: none;
+  position: absolute;
+  top: -104%;
+  transform: skew(calc(150deg * var(--skew))) translateY(var(--progress, 0));
+  transition: transform 0.2s ease;
+  width: 100%;
+}
+
+.btn-17:after {
+  --progress: 0%;
+  left: calc(50% + 50% * var(--skew));
+  top: 102%;
+  z-index: -1;
+}
+
+.btn-17:hover:before {
+  --progress: 100%;
+}
+
+.btn-17:hover:after {
+  --progress: -102%;
+  
+}
+
+
+/* From Uiverse.io by waliddu001 */ 
+.button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(20, 20, 20);
+  border: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 0px 4px rgba(252, 251, 251, 0.253);
+  cursor: pointer;
+  transition-duration: 0.3s;
+  overflow: hidden;
+  position: relative;
+}
+
+.svgIcon {
+  width: 12px;
+  transition-duration: 0.3s;
+}
+
+.svgIcon path {
+  fill: white;
+}
+
+.button:hover {
+  width: 140px;
+  border-radius: 50px;
+  transition-duration: 0.3s;
+  background-color: rgb(218, 9, 9);
+  
+  align-items: center;
+}
+
+.button:hover .svgIcon {
+  /* width: 20px; */
+  transition-duration: 0.3s;
+  transform: translateY(-200%);
+}
+
+.button::before {
+  position: absolute;
+  bottom: -20px;
+  content: "Back to Top";
+  color: white;
+  /* transition-duration: .3s; */
+  font-size: 0px;
+}
+
+.button:hover::before {
+  font-size: 13px;
+  opacity: 1;
+  bottom: unset;
+  /* transform: translateY(-30px); */
+  transition-duration: 0.3s;
+}
+
+
+.nav-link:hover{
+  border-bottom: 1px solid red;
+}
